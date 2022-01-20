@@ -1,0 +1,61 @@
+/* Get the font */
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+:root {
+    --color-primary: #000000;
+    --color-secondary: #ffffff;
+}
+
+html {
+    /* Set the font-family */
+    font-family: 'Dongle', sans-serif;
+    /* Set colors */
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+body {
+    /* Set the font-settings */
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.header>h1 {
+    text-align: center;
+    font-size: 5vh;
+}
+
+.main-element {
+    display: grid;
+    width: calc(100vw - 20px);
+    height: 50vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "section_text section_polygon";
+}
+
+.section_text {
+    grid-area: section_text;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.section_text>.section_title {
+    font-size: 3.5vh;
+    font-weight: bold;
+}
+
+.section_polygon {
+    grid-area: section_polygon;
+    /* Center all elements vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture1 {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
