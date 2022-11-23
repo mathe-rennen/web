@@ -1,0 +1,27 @@
+:root {
+    --background-color: #282c36;
+    --accent-background-color: #181c26;
+    --text-color: #ffffff;
+    --accent-color: #eb660e;
+}
+
+html,
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-size: 100%;
+    padding: 0;
+    transition: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Inter";
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
